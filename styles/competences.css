@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    text-align: left;
+    margin: 20px 50px;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.competence-section {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de se réorganiser si nécessaire */
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+.competence-texte {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.competence-logo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap; /* Permet d'afficher les images en ligne tout en permettant à chaque image de s'ajuster */
+}
+
+.competence-logo img {
+    width: 30%; /* Chaque image prend 30% de la largeur */
+    height: auto;
+    margin: 5px;
+    max-width: 150px; /* Limite la taille des images */
+}
+
+#developpement {
+    margin-bottom: 200px; /* Ajuste la valeur selon l'espacement souhaité */
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer a {
+    color: #00aced;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .competence-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .competence-logo {
+        width: 100%;
+    }
+
+    .competence-logo img {
+        width: 100%;
+        max-width: 300px; /* Ajuste la taille des images sur mobile */
+        margin-bottom: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}

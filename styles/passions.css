@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    margin: 20px 50px;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* Style pour chaque section passion */
+.passion-section {
+    margin-bottom: 40px;  /* Augmenter l'espace entre les sections */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Conteneur pour le texte et les images */
+.passion-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espacement entre le texte et l'image */
+}
+
+/* Image des passions */
+.passion-img {
+    max-width: 100%;
+    width: 300px;  /* Largeur contrôlée des images */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Style des paragraphes */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #00aced;
+    text-decoration: none;
+}
+
+/* Média Query pour les petits écrans */
+@media (max-width: 768px) {
+    .passion-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
